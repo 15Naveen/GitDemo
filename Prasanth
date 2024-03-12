@@ -1,0 +1,147 @@
+[12/03, 1:45 pm] Prasanth: Program7
+#include <stdio.h>
+#include <math.h>
+int main() {
+    double number, squareRoot;
+    printf("Enter a number: ");
+    scanf("%lf", &number);
+     squareRoot = sqrt(number);
+     printf("Square root of %.2lf = %.2lf\n", number, squareRoot);
+     return 0;
+}
+[12/03, 1:46 pm] Prasanth: Program 8 
+#include <stdio.h>
+int main() {
+    int num1, num2;
+    
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    
+    if (num1 == num2) {
+        printf("Both numbers are equal.\n");
+    } else if (num1 < num2) {
+        printf("Smallest number: %d\n", num1);
+        printf("Biggest number: %d\n", num2);
+    } else {
+        printf("Smallest number: %d\n", num2);
+        printf("Biggest number: %d\n", num1);
+    }
+    
+    return 0;
+}
+[12/03, 1:46 pm] Prasanth: Program 9
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+    
+    printf("Enter three distinct numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    
+    if (num1 < num2 && num1 < num3) {
+        printf("Smallest number: %d\n", num1);
+    } else if (num2 < num1 && num2 < num3) {
+        printf("Smallest number: %d\n", num2);
+    } else {
+        printf("Smallest number: %d\n", num3);
+    }
+    
+    return 0;
+}
+[12/03, 1:47 pm] Prasanth: Program 10
+#include <stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    if (num % 2 == 0) {
+        printf("%d is an even number.\n", num);
+    } else {
+        printf("%d is not an even number.\n", num);
+    }
+    
+    return 0;
+}
+[12/03, 1:47 pm] Prasanth: Program 11
+#include <stdio.h>
+
+int main() {
+    int num;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    if (num % 7 == 0) {
+        printf("%d is a multiple of 7.\n", num);
+    } else {
+        printf("%d is not a multiple of 7.\n", num);
+    }
+    
+    return 0;
+}
+[12/03, 1:48 pm] Prasanth: Program 12
+#include <stdio.h>
+
+int main() {
+    char ch;
+    
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+    
+    if (ch >= '0' && ch <= '9') {
+        printf("%c is a digit.\n", ch);
+    } else if (!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))) {
+        printf("%c is a symbol.\n", ch);
+    } else {
+        printf("%c is neither a digit nor a symbol.\n", ch);
+    }
+    
+    return 0;
+}
+[12/03, 1:48 pm] Prasanth: Program 13
+#include <stdio.h>
+
+int main() {
+    char letter;
+
+    printf("Enter a letter: ");
+    scanf(" %c", &letter);
+
+    
+    letter = tolower(letter);
+
+    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+        printf("%c is a vowel.\n", letter);
+    } else {
+        printf("%c is not a vowel.\n", letter);
+    }
+
+    return 0;
+}
+[12/03, 1:48 pm] Prasanth: Program 14
+#include <stdio.h>
+
+int main() {
+    char letter;
+
+    printf("Enter a letter: ");
+    scanf(" %c", &letter);
+
+    if (letter >= 'a' && letter <= 'z') {
+        
+        letter = letter - 32;
+    } else if (letter >= 'A' && letter <= 'Z') {
+        
+        letter = letter + 32;
+    }
+
+    printf("Letter in opposite case: %c\n", letter);
+
+    return 0;
+}
